@@ -8,6 +8,7 @@
     <body>
         <header class="page-header">
             <nav class="main-menu">
+                <img src="img/sedona.png" alt="sedona" width="458" height="352">
                 <div class="logo">
                     <a><img alt="Логотип" src="img/logo.png" width="138" height="70"></a>
                 </div>
@@ -28,8 +29,8 @@
                 <h2 class="visually-hidden">Преимущества</h2>
                 <p>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
       
-                <ul class="features-with-img">
-                    <li class="features-with-img-item">
+                <ul class="features-img">
+                    <li class="features-img-item">
                         <img src="img/real-town.jpg" width="800" height="401" alt="Настоящий городок">
                         <div>
                             <h3>Настоящий городок</h3>
@@ -37,7 +38,7 @@
                             <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
                         </div>
                     </li>
-                    <li class="features-with-img-item">
+                    <li class="features-img-item">
                         <img src="img/bridge.jpg" width="800" height="400" alt="Мост дьявола">
                         <div>
                             <h3>Там есть Мост дьявола</h3>
@@ -46,7 +47,7 @@
                       </div>
                     </li>
                 </ul>
-                <ul class="features-list">
+                <ul class="features">
                     <li class="features-item">
                         <h3>Небольшая площадь</h3>
                         <p>— №3 —</p>
@@ -65,7 +66,7 @@
                 </ul>
 
                 <h2 class="visually-hidden">Рекомендации</h2> 
-                <ul class="recommendations-list">
+                <ul class="recommendations">
                     <li class="recommendations-item">
                         <h3>Жильё</h3>
                         <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>  
@@ -91,19 +92,25 @@
                     <p class="date-item">
                         <label for="date-entry">Дата заезда: </label>
                         <input type="text" id="date-entry" name="date-entry-field" placeholder="24 апреля 2017">
+                        <button class="button" type="button">Календарь</button>
                     </p>
                     <p class="date-item">
                         <label for="date-departure">Дата выезда: </label>
                         <input type="text" id="date-departure" name="date-departure-field" placeholder="24 апреля 2017">
+                        <button class="button" type="button">Календарь</button>
                     </p>
                     <div class="half-width">
                         <p class="amount-item">
                             <label for="adults-amount">Взрослые: </label>
                             <input type="number" id="adults-amount" name="adults-amount-field" value="2">
+                            <button class="button" type="button">Уменьшить</button>
+                            <button class="button" type="button">Увеличить</button>
                         </p>
                         <p class="amount-item">
                             <label for="kids-amount">Дети: </label>
                             <input type="number" id="kids-amount" name="kids-amount-field" value="0">
+                            <button class="button" type="button">Уменьшить</button>
+                            <button class="button" type="button">Увеличить</button>
                         </p>
                     </div>
                     <button class="button" type="submit">Найти</button>
