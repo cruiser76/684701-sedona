@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+<head class="hotel-page">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Отели в Седоне</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="page-header">
+    <header class="hotels-header">
         <nav class="main-menu">
             <div class="logo">
                 <a href="index.html"><img alt="Логотип" src="img/logo.png" width="138" height="70">Главная</a>
             </div>
-        <ul>
+        <ul class="main-navigations">
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта штата</a></li>
-            <li><a href="#">Гостиницы</a></li>
+            <li><a href="#" class="current">Гостиницы</a></li>
         </ul>
       </nav>  
     </header>
    
-    <main>
+    <main class="main-hotel">
         <h1 class="visually-hidden">Выбор гостиницы</h1>
         <section class="filters">
             <h2 class="visually-hidden">Фильтры</h2>
@@ -31,7 +33,7 @@
                     <legend>
                         Инфраструктура:
                     </legend>
-                    <ul>
+                    <ul class="infrastructure">
                         <li class="infrastructure-item">
                             <input type="checkbox" id="pool" name="pool-field">
                             <label for="pool">Бассейн</label>
@@ -50,7 +52,7 @@
                     <legend>
                         Тип жилья:
                     </legend>
-                    <ul>
+                    <ul class="type-housing">
                         <li class="type-housing-item">
                             <input type="checkbox" id="hotel" name="hotel-field">
                             <label for="hotel">Гостиница</label>
@@ -83,7 +85,7 @@
                         <input type="range" min="0" max="3000" name="price-range">
                     </p>
                 </fieldset>
-                <button class="button" type="submit">Показать</button>
+                <button class="button button-show" type="submit">Показать</button>
             </form>
         </section>
         <section class="hotels">
@@ -92,13 +94,13 @@
                 <b>Найдено: <span class="result-number">3</span></b>
                 <span>Сортировка:</span>
                 <ul class="sort-by-list">
-                    <li class="sort-by-item">
-                        <a href="#">по-цене</a>
+                    <li class="sort-by-item sort-price">
+                        <a href="#" class="current">по-цене</a>
                     </li>
-                    <li class="sort-by-item">
+                    <li class="sort-by-item sort-type">
                         <a href="#">по-типу</a>
                     </li>
-                    <li class="sort-by-item">
+                    <li class="sort-by-item sort-rating">
                         <a href="#">по-рейтингу</a>
                     </li>
                 </ul>
@@ -107,16 +109,16 @@
             </div>
             <ul class="hotels-list">
                 <li class="hotels-item">
-                    <img src="img/layer_21.jpg" alt="Amara Resort & Spa">
+                    <img src="img/layer_21.jpg" alt="Amara Resort &amp; Spa">
                     <div class="hotels-brief">
-                        <a href="#">
-                            <h3>Amara Resort & Spa</h3>
+                        <a href="#" class="hotels-name">
+                            <h3>Amara Resort &amp; Spa</h3>
                         </a>
-                        <div>
+                        <div class="hotels-type">
                             <p>Гостиница</p>
                             <a href="#">Подробнее</a>
                         </div>
-                        <div>
+                        <div class="hotels-price">
                             <p>От 4000 р.</p>
                             <a href="#">Забронировать</a>
                         </div>
@@ -129,14 +131,14 @@
                 <li class="hotels-item">
                     <img src="img/layer_89.jpg" alt="Desert Quail Inn">
                     <div class="hotels-brief">
-                        <a href="#">
+                        <a href="#" class="hotels-name">
                             <h3>Desert Quail Inn</h3>
                         </a>
-                        <div>
+                        <div class="hotels-type">
                             <p>Мотель</p>
                             <a href="#">Подробнее</a>
                         </div>
-                        <div>
+                        <div class="hotels-price">
                             <p>От 3000 р.</p>
                             <a href="">Забронировать</a>
                         </div>
@@ -149,14 +151,14 @@
                 <li class="hotels-item">
                     <img src="img/layer_22.jpg" alt="Villas at Poco Diablo">
                     <div class="hotels-brief">
-                        <a href="#">
+                        <a href="#" class="hotels-name">
                             <h3>Villas at Poco Diablo</h3>
                         </a>
-                        <div>
+                        <div class="hotels-type">
                             <p>Апартаменты</p>
                             <a href="#">Подробнее</a>
                         </div>
-                        <div>
+                        <div class="hotels-price">
                             <p>От 2000 р.</p>
                             <a href="#">Забронировать</a>
                         </div>
@@ -170,7 +172,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="hotels-footer">
         <b>#visitsedona</b>
         <ul class="social">
             <li class="social-btn social-tw"><a href="#">twitter</a></li>

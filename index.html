@@ -3,16 +3,18 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header class="page-header">
+            <img src="img/sedona.png" alt="sedona" width="458" height="352">
             <nav class="main-menu">
-                <img src="img/sedona.png" alt="sedona" width="458" height="352">
                 <div class="logo">
                     <a><img alt="Логотип" src="img/logo.png" width="138" height="70"></a>
                 </div>
-                <ul>
+                <ul class="main-navigations">
                     <li><a href="#">Информация</a></li>
                     <li><a href="#">Фото и видео</a></li>
                     <li><a href="#">Карта штата</a></li>
@@ -21,9 +23,9 @@
             </nav>  
         </header>
     
-        <main>
+        <main class="main-page">
             <h1 class="visually-hidden">Седона</h1>
-            <p>Седона-небольшой городок в Аризоне, заслуживающий большего</p> 
+            <p>Седона-небольшой городок в Аризоне, заслуживающий большего!</p> 
       
             <section class="features-and-recommendations">
                 <h2 class="visually-hidden">Преимущества</h2>
@@ -68,16 +70,22 @@
                 <h2 class="visually-hidden">Рекомендации</h2> 
                 <ul class="recommendations">
                     <li class="recommendations-item">
-                        <h3>Жильё</h3>
-                        <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>  
+                        <div>
+                            <h3>Жильё</h3>
+                            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>  
+                        </div>
                     </li>
                     <li class="recommendations-item">
-                        <h3>Еда</h3>
-                        <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                        <div>
+                            <h3>Еда</h3>
+                            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                        </div>
                     </li>
                     <li class="recommendations-item">
-                        <h3>Сувениры</h3>
-                        <p>Не только китайского, но и местного производства!</p>
+                        <div>
+                            <h3>Сувениры</h3>
+                            <p>Не только китайского, но и местного производства!</p>
+                        </div>
                     </li>
                 </ul>
             </section>
@@ -87,38 +95,38 @@
                 <b>Заинтересовались?</b>
                 <p>Укажите предполагаемые даты поездки, и мы покажем вам
                 лучшие предложения гостиниц в Седоне</p> 
-                <button class="button" type="button">Поиск гостиницы в седоне</button> 
+                <button class="button button-search" type="button">Поиск гостиницы в седоне</button> 
                 <form class="search-form" method="POST" action="https://echo.htmlacademy.ru">
                     <p class="date-item">
                         <label for="date-entry">Дата заезда: </label>
                         <input type="text" id="date-entry" name="date-entry-field" placeholder="24 апреля 2017">
-                        <button class="button" type="button">Календарь</button>
+                        <button class="button button-date" type="button">Календарь</button>
                     </p>
                     <p class="date-item">
                         <label for="date-departure">Дата выезда: </label>
                         <input type="text" id="date-departure" name="date-departure-field" placeholder="24 апреля 2017">
-                        <button class="button" type="button">Календарь</button>
+                        <button class="button button-date" type="button">Календарь</button>
                     </p>
                     <div class="half-width">
                         <p class="amount-item">
                             <label for="adults-amount">Взрослые: </label>
                             <input type="number" id="adults-amount" name="adults-amount-field" value="2">
-                            <button class="button" type="button">Уменьшить</button>
-                            <button class="button" type="button">Увеличить</button>
+                            <button class="button button-less" type="button">Уменьшить</button>
+                            <button class="button button-more" type="button">Увеличить</button>
                         </p>
                         <p class="amount-item">
                             <label for="kids-amount">Дети: </label>
                             <input type="number" id="kids-amount" name="kids-amount-field" value="0">
-                            <button class="button" type="button">Уменьшить</button>
-                            <button class="button" type="button">Увеличить</button>
+                            <button class="button button-less" type="button">Уменьшить</button>
+                            <button class="button button-more" type="button">Увеличить</button>
                         </p>
                     </div>
-                    <button class="button" type="submit">Найти</button>
+                    <button class="button button-submit" type="submit">Найти</button>
                 </form>    
             </section> 
         </main>
 
-    <footer>
+    <footer class="page-footer">
         <img class="map" src="img/map.jpg" width="1200" height="593" alt="map">
         <b>#visitsedona</b>
         <ul class="social">
@@ -128,7 +136,7 @@
         </ul>
         <a class="acdemy-logo" href="https://htmlacademy.ru/intensive/htmlcss" title="Профессиональный
             HTML и CSS, уровень 1">
-            website by<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTMLacademy">
+            website by <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTMLacademy">
         </a>
     </footer>
     </body>
