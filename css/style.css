@@ -1,14 +1,14 @@
-
 body {
-    width: 1200px;
-    margin: 0 auto;
-    box-shadow: 7px 0 7px -3px rgb(200, 200, 200),
-              -7px 0 7px -3px rgb(200, 200, 200);
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 26px;
     color: #000000;
     text-transform: uppercase;
+}
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0px 0 7px 3px rgb(200, 200, 200);
 }
 main {
     display: block;
@@ -27,7 +27,6 @@ a {
     overflow: hidden;
 }
 .main-navigations,
-.features-img,
 .features,
 .recommendations,
 .social,
@@ -76,33 +75,32 @@ a {
 .main-page .recommendations-item {
     background-color: #ffffff;   
 }
-.features-img div {
+.features-img-item div {
     background-color: #81b3d2;
     color: #ffffff;
     
 }
-.features-img h3,
 .features h3,
 .recommendations h3 {
     font-size: 21px;
     line-height: 21px;
+    text-align: center;
 }
-.features-img p,
 .features p,
 .recommendations p {
     font-size: 14px;
     line-height: 21px;
+    text-align: center;
 }
 .main-page>p {
     font-size: 21px;
     font-weight: bold;
 }
-.recommendations-item div{
+.features-item div{
     background-color: #eeeeee;
 }
-.features p,
+.features-item p,
 .recommendations p,
-.features-img,
 .hotel-search>p,
 .hotels-type p,
 .hotels-price p {
@@ -246,4 +244,39 @@ a {
 .hotels-price a,
 .hotels-type a {
     color: #ffffff;
-} 
+}
+
+/* Сетка */
+
+.page-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+.main-page>p {
+    width: 600px;
+    margin: 0 auto 25px;
+    text-align: center;
+}
+.features-and-recommendations>p {
+    width: 600px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+.features {
+    display: flex;
+    flex-direction: column;
+}
+.features li:last-child {
+    order: -1;
+}
+.features li:first-child {
+    order: -2;
+}
+.recommendations {
+    display: flex;
+}
+.recommendations-item {
+    width: 33%;
+    flex-grow: 1;
+}
