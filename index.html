@@ -36,12 +36,12 @@
           
                     <ul class="features">
                         <li class="features-img-item">
-                            <img src="img/real-town.jpg" width="800" height="401" alt="Настоящий городок">
                             <div>
                                 <h3>Настоящий городок</h3>
                                 <p>— №1 —</p>
                                 <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
                             </div>
+                            <img src="img/real-town.jpg" width="800" height="401" alt="Настоящий городок">
                         </li>
                         <li class="features-img-item">
                             <img src="img/bridge.jpg" width="800" height="400" alt="Мост дьявола">
@@ -51,26 +51,30 @@
                                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                           </div>
                         </li>
-                        <li class="features-item">
-                            <div>
-                                <h3>Небольшая площадь</h3>
-                                <p>— №3 —</p>
-                                <p>Все достопримечательности  находятся очень близко</p>
-                            </div>
-                        </li>
-                        <li class="features-item">
-                            <div>
-                                <h3>Красивая дорога</h3>
-                                <p>— №4 —</p>
-                                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-                            </div>
-                        </li>
-                        <li class="features-item">
-                            <div>
-                                <h3>Мало туристов</h3>
-                                <p>— №5 —</p>
-                                <p>Большинство едет в гранд каньон и толпится там</p>
-                            </div>
+                        <li>
+                            <ul class="features-list">
+                                <li class="features-item">
+                                    <div>
+                                        <h3>Небольшая площадь</h3>
+                                        <p>— №3 —</p>
+                                        <p>Все достопримечательности  находятся очень близко</p>
+                                    </div>
+                                </li>
+                                <li class="features-item">
+                                    <div>
+                                        <h3>Красивая дорога</h3>
+                                        <p>— №4 —</p>
+                                        <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                                    </div>
+                                </li>
+                                <li class="features-item">
+                                    <div>
+                                        <h3>Мало туристов</h3>
+                                        <p>— №5 —</p>
+                                        <p>Большинство едет в гранд каньон и толпится там</p>
+                                    </div>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <h2 class="visually-hidden">Рекомендации</h2> 
@@ -78,7 +82,7 @@
                                 <li class="recommendations-item">
                                     <div>
                                         <h3>Жильё</h3>
-                                        <p>Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>  
+                                        <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>  
                                     </div>
                                 </li>
                                 <li class="recommendations-item">
@@ -101,10 +105,10 @@
                 <section class="hotel-search">
                     <h2 class="visually-hidden">Поиск гостиницы</h2> 
                     <b>Заинтересовались?</b>
-                    <p>Укажите предполагаемые даты поездки, и мы покажем вам
+                    <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам
                     лучшие предложения гостиниц в Седоне</p> 
                     <button class="button button-search" type="button">Поиск гостиницы в седоне</button> 
-                    <form class="search-form" method="POST" action="https://echo.htmlacademy.ru">
+                    <form class="search-form modal" method="POST" action="https://echo.htmlacademy.ru">
                         <p class="date-item">
                             <label for="date-entry">Дата заезда: </label>
                             <input type="text" id="date-entry" name="date-entry-field" placeholder="24 апреля 2017">
@@ -136,16 +140,18 @@
     
             <footer class="page-footer">
                 <img class="map" src="img/map.jpg" width="1200" height="593" alt="map">
-                <b>#visitsedona</b>
-                <ul class="social">
-                    <li class="social-btn social-tw"><a href="#">twitter</a></li>
-                    <li class="social-btn social-fb"><a href="#">facebook</a></li>
-                    <li class="social-btn social-youtube"><a href="">youtube</a></li>
-                </ul>
-                <a class="acdemy-logo" href="https://htmlacademy.ru/intensive/htmlcss" title="Профессиональный
-                    HTML и CSS, уровень 1">
-                    website by <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTMLacademy">
-                </a>
+                <div class="footer-container">
+                    <b>#visitsedona</b>
+                    <ul class="social">
+                        <li class="social-btn social-tw"><a href="#">twitter</a></li>
+                        <li class="social-btn social-fb"><a href="#">facebook</a></li>
+                        <li class="social-btn social-youtube"><a href="">youtube</a></li>
+                    </ul>
+                    <a class="acdemy-logo" href="https://htmlacademy.ru/intensive/htmlcss" title="Профессиональный
+                        HTML и CSS, уровень 1">
+                        website by <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTMLacademy">
+                    </a>
+                </div>
             </footer>
         </div>
     </body>
