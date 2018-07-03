@@ -85,17 +85,23 @@ h3 {
 }
 .modal {
     position: absolute;
-    background-color: #ffffff;
     width: 568px;
-    box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+    overflow: hidden;   
+}
+.modal-container-hidden {
+    transform: translateY(-100%);
+   
 }
 
 .modal-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 54px;
-    margin-top: 55px;
+    padding-left: 54px;
+    padding-top: 55px;
+    background-color: #ffffff;
+    box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+    transition: transform 0.3s ease-in-out;
 }
 .modal-container p {
     margin: 0;
@@ -373,6 +379,7 @@ h3 {
     width: 568px;
     padding: 31px 0;
     cursor: pointer;
+    outline: none;
 }
 
 .search-form .button-submit,
