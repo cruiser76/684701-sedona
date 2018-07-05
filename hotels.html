@@ -7,7 +7,7 @@
     <title>Отели в Седоне</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-pref.css">
 </head>
 <body>
     <div class="wrapper">
@@ -47,7 +47,7 @@
                                     <label for="parking">Парковка</label>
                                 </li>
                                 <li class="infrastructure-item">
-                                    <input class="infrastructure-input-checkbox visually-hidden input-checkbox" type="checkbox" id="wi-fi" name="wi-fi-field" disabled>
+                                    <input class="infrastructure-input-checkbox visually-hidden input-checkbox" type="checkbox" id="wi-fi" name="wi-fi-field">
                                     <label for="wi-fi">wi-fi</label>
                                 </li>
                             </ul>
@@ -66,7 +66,7 @@
                                     <label for="motel">Мотель</label>
                                 </li>
                                 <li class="type-housing-item">
-                                    <input class="type-housing-checkbox visually-hidden input-checkbox" type="checkbox" id="apartments" name="apartments-field" checked disabled>
+                                    <input class="type-housing-checkbox visually-hidden input-checkbox" type="checkbox" id="apartments" name="apartments-field" checked>
                                     <label for="apartments">Апартаменты</label>
                                 </li>
                             </ul>
@@ -122,7 +122,7 @@
                 </div>
                 <ul class="hotels-list">
                     <li class="hotels-item">
-                        <img src="img/layer_21.jpg" alt="Amara Resort &amp; Spa">
+                        <img src="img/layer_21.jpg" width="135" height="90" alt="Amara Resort &amp; Spa">
                         <div class="hotels-brief">
                             <a href="#" class="hotels-name">
                                 <h3>Amara Resort &amp; Spa</h3>
@@ -144,7 +144,7 @@
                         </div>
                     </li>
                     <li class="hotels-item">
-                        <img src="img/layer_89.jpg" alt="Desert Quail Inn">
+                        <img src="img/layer_89.jpg" width="135" height="90" alt="Desert Quail Inn">
                         <div class="hotels-brief">
                             <a href="#" class="hotels-name">
                                 <h3>Desert Quail Inn</h3>
@@ -166,7 +166,7 @@
                         </div>
                     </li>
                     <li class="hotels-item">
-                        <img src="img/layer_22.jpg" alt="Villas at Poco Diablo">
+                        <img src="img/layer_22.jpg" width="135" height="90" alt="Villas at Poco Diablo">
                         <div class="hotels-brief">
                             <a href="#" class="hotels-name">
                                 <h3>Villas at Poco Diablo</h3>
@@ -193,12 +193,14 @@
     
         <footer class="hotels-footer">
             <div class="footer-container">
-                <b>#visitsedona</b>
+                <div class="hashtag">
+                    <b>#visitsedona</b>
+                </div>
                 <ul class="social">
                     <li>
-                        <a class="social-btn social-tw" href="#">
+                        <a class="social-btn social-tw" href="#" title="Мы в твиттере">
                             <span class="visually-hidden">twitter</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="16" viewBox="0 0 17 16">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
                                 <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 
                                 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 
                                 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 
@@ -208,7 +210,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="social-btn social-fb" href="#">
+                        <a class="social-btn social-fb" href="#" title="Мы в фейсбуке">
                             <span class="visually-hidden">facebook</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
                                 <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
@@ -216,18 +218,20 @@
                         </a>
                     </li>
                     <li>
-                        <a class="social-btn social-youtube" href="#">
+                        <a class="social-btn social-youtube" href="#" title="Наш youtube канал">
                             <span class="visually-hidden">youtube</span>
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
                                 <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027
-                                    11.998V4.002L15.014 8l-8.987 3.998z"/>
-                            </svg>
+                                 11.998V4.002L15.014 8l-8.987 3.998z"/>
+                                </svg>
+
                         </a>
                     </li>
                 </ul>
                 <a class="academy-link" href="https://htmlacademy.ru/intensive/htmlcss" title="Профессиональный
                     HTML и CSS, уровень 1">
-                    website by <svg id="Layer_1" class="academy-logo" width="115" height="41" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.08 36.85">
+                    website by 
+                    <svg id="Layer_1" class="academy-logo" width="115" height="41" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.08 36.85">
                             <path d="M44.61,26.88a2,2,0,0,0,.55-0.1v1.33a3.25,3.25,0,0,1-1.18.21,1.67,1.67,0,0,
                         1-1.67-1,4.84,4.84,0,0,1-3.14,1.08c-1.51,0-2.91-.83-2.91-2.55,0-2.13,2-2.79,3.71-2.79a11.08,
                         11.08,0,0,1,2.17.25v-0.3c0-1-.76-1.77-2.19-1.77a7.42,7.42,0,0,0-3,.64v-1.7a10.21,10.21,0,0,1,
