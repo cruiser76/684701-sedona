@@ -108,13 +108,6 @@ img {
 .hotels-footer a {
     color: #000000;
 }
-.footer-container {
-    background-color: #ffffff;
-    opacity: 0.9;
-}
-.map {
-    margin-bottom: -128px;
-}
 
 .main-navigations a:hover,
 .hotels-name:hover {
@@ -296,6 +289,7 @@ img {
 .modal {
     position: absolute;
     width: 568px;
+    z-index: 100;
     overflow: hidden;
 }
 .modal-container-hidden {
@@ -857,10 +851,28 @@ img {
     background-color: #f2f2f2;
     color: #666666;
 }
+.page-footer {
+    position: relative;
+}
+
 .footer-container {
     display: flex;
+    width: 100%;
     padding-top: 19px;
     padding-bottom: 50px;
+    background-color: #ffffff;
+    opacity: 0.9;
+   
+}
+.footer-container-main {
+    position: absolute;
+    bottom: -6px;
+    z-index: 75;
+}
+.map iframe {
+    position: absolute;
+    top:0;
+    z-index: 50;
 }
 .footer-container .hashtag,
 .footer-container .social,
